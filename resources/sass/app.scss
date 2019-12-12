@@ -1,0 +1,43 @@
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+
+.vuep {
+  width: 100%
+}
+
+.cm-comment {
+  color: #adadad !important;
+}
+
+.top-header {
+  background: #41b883;
+}
+
+.text-white {
+  .card-body p {
+    color: white
+  }
+}
+
+#dw-s1 {
+  header {
+      background: #41b883;
+      color: white;
+  }
+  .list-group {
+    padding-top: 0!important;
+  }
+}
+
+.bg-success, .btn-vue{
+    background: #35495e!important;
+    color: white;
+}
+
+.btn-label {
+  margin: 10px;
+    text-transform: initial;
+}
