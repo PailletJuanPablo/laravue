@@ -31,38 +31,43 @@
         <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-in">
             <header class="bmd-layout-header ">
                 <div class="navbar navbar-light bg-faded top-header">
-                    <button class="navbar-toggler btn btn-raised btn-link btn-vue text-white" type="button" data-toggle="drawer" data-target="#dw-s1">
-                     <i class="fas fa-align-left"></i> <span class="btn-label"> Alternar navegación </span>
+                    <button class="navbar-toggler btn btn-raised btn-link btn-vue text-white" type="button"
+                        data-toggle="drawer" data-target="#dw-s1">
+                        <i class="fas fa-align-left"></i> <span class="btn-label"> Alternar navegación </span>
                     </button>
                     <ul class="nav navbar-nav">
-                        <li class="nav-item">Title</li>
+                        <li class="nav-item" style="font-size: 10px">Developed with ♥ by PailletJP</li>
                     </ul>
                 </div>
             </header>
             <div id="dw-s1" class="bmd-layout-drawer bg-faded" aria-expanded="true">
                 <header>
-                    <a class="navbar-brand">Title</a>
+                    <a class="navbar-brand">Laravue</a>
                 </header>
                 <ul class="list-group">
-                <a class="list-group-item" href="{{route('components')}}" > Componentes </a>
-                   <a class="list-group-item" href="{{route('dataBinding')}}"> Renderizado Declarativo </a>
-             <a class="list-group-item" href="{{route('conditional')}}"> Renderizado Condicional </a>
+                    <a class="{{ (request()->is('components*')) ? 'list-group-item active' : 'list-group-item' }}"
+                        href="{{route('components')}}"> Componentes </a>
+
+                    <a 
+                    class="{{ (request()->is('dataBinding*')) ? 'list-group-item active' : 'list-group-item' }}"
+                    href="{{route('dataBinding')}}"> Renderizado Declarativo </a>
+                    <a 
+                    class="{{ (request()->is('conditional*')) ? 'list-group-item active' : 'list-group-item' }}"
+                    href="{{route('conditional')}}"> Renderizado Condicional </a>
+                    <a 
+                    class="{{ (request()->is('loops*')) ? 'list-group-item active' : 'list-group-item' }}"
+                    href="{{route('loops')}}"> Bucles </a>
+                    <a class="{{ (request()->is('events*')) ? 'list-group-item active' : 'list-group-item' }}" href="{{route('loops')}}">
+                        Eventos </a>
+                        <a class="{{ (request()->is('methods*')) ? 'list-group-item active' : 'list-group-item' }}" href="{{route('loops')}}">
+                                Métodos </a>
                 </ul>
             </div>
             <main class="bmd-layout-content">
                 <div id="content" class="container-fluid">
 
-                     <!-- Page Content  -->
-
-         
-
-          
-            @yield('content')
-
-
-
-
-
+                    <!-- Page Content  -->
+                    @yield('content')
                 </div>
             </main>
         </div>

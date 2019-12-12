@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
 @section('layoutContent')
-            @yield('content')
-       
-
+@yield('content')
 @endsection

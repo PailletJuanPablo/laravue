@@ -11392,3 +11392,12 @@ a.text-dark:focus {
   text-transform: initial;
 }
 
+.tutorials-index {
+  text-align: center;
+}
+
+.tutorials-index img {
+  width: 25%;
+  margin: auto;
+}
+
