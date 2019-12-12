@@ -57,9 +57,9 @@
                     <a 
                     class="{{ (request()->is('loops*')) ? 'list-group-item active' : 'list-group-item' }}"
                     href="{{route('loops')}}"> Bucles </a>
-                    <a class="{{ (request()->is('events*')) ? 'list-group-item active' : 'list-group-item' }}" href="{{route('loops')}}">
+                    <a class="{{ (request()->is('events*')) ? 'list-group-item active' : 'list-group-item' }}" href="{{route('events')}}">
                         Eventos </a>
-                        <a class="{{ (request()->is('methods*')) ? 'list-group-item active' : 'list-group-item' }}" href="{{route('loops')}}">
+                        <a class="{{ (request()->is('methods*')) ? 'list-group-item active' : 'list-group-item' }}" href="{{route('methods')}}">
                                 Métodos </a>
                 </ul>
             </div>
