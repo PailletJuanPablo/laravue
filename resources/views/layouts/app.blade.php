@@ -48,20 +48,30 @@
                     <a class="{{ (request()->is('components*')) ? 'list-group-item active' : 'list-group-item' }}"
                         href="{{route('components')}}"> Componentes </a>
 
-                    <a 
-                    class="{{ (request()->is('dataBinding*')) ? 'list-group-item active' : 'list-group-item' }}"
-                    href="{{route('dataBinding')}}"> Renderizado Declarativo </a>
-                    <a 
-                    class="{{ (request()->is('conditional*')) ? 'list-group-item active' : 'list-group-item' }}"
-                    href="{{route('conditional')}}"> Renderizado Condicional </a>
-                    <a 
-                    class="{{ (request()->is('loops*')) ? 'list-group-item active' : 'list-group-item' }}"
-                    href="{{route('loops')}}"> Bucles </a>
-                    <a class="{{ (request()->is('events*')) ? 'list-group-item active' : 'list-group-item' }}" href="{{route('events')}}">
+                    <a class="{{ (request()->is('dataBinding*')) ? 'list-group-item active' : 'list-group-item' }}"
+                        href="{{route('dataBinding')}}"> Renderizado Declarativo </a>
+                    <a class="{{ (request()->is('conditional*')) ? 'list-group-item active' : 'list-group-item' }}"
+                        href="{{route('conditional')}}"> Renderizado Condicional </a>
+                    <a class="{{ (request()->is('loops*')) ? 'list-group-item active' : 'list-group-item' }}"
+                        href="{{route('loops')}}"> Bucles </a>
+                    <a class="{{ (request()->is('events*')) ? 'list-group-item active' : 'list-group-item' }}"
+                        href="{{route('events')}}">
                         Eventos </a>
-                        <a class="{{ (request()->is('methods*')) ? 'list-group-item active' : 'list-group-item' }}" href="{{route('methods')}}">
-                                Métodos </a>
+                    <a class="{{ (request()->is('methods*')) ? 'list-group-item active' : 'list-group-item' }}"
+                        href="{{route('methods')}}">
+                        Métodos </a>
+
+                        <a href="https://github.com/PailletJuanPablo/laravue" class="list-group-item bg-secondary text-white">
+                                Documentación de Vue </a>
+
+                        <a  
+                        href="https://github.com/PailletJuanPablo/laravue" class="list-group-item bg-secondary text-white">
+                            Código fuente </a>
+
+
                 </ul>
+
+
             </div>
             <main class="bmd-layout-content">
                 <div id="content" class="container-fluid">
