@@ -61,7 +61,7 @@
                         href="{{route('methods')}}">
                         Métodos </a>
 
-                        <a href="https://github.com/PailletJuanPablo/laravue" class="list-group-item bg-secondary text-white">
+                        <a href="https://es-vuejs.github.io/vuejs.org/v2/guide/" class="list-group-item bg-secondary text-white">
                                 Documentación de Vue </a>
 
                         <a  
