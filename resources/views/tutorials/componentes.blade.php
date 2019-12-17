@@ -6,7 +6,7 @@
         <div class="col-md-12">
             <div class="card mb-5 text-white bg-success">
                 <div class="card-body">
-                    <h2 class="card-title"> Componentes </h5>
+                    <h2 class="card-title"> Componentes en Vue.js</h5>
                         <p class="card-text text-white">
                             En Vue trabajamos con componentes. Son partes encapsuladas de la vista que contienen su
                             propia
