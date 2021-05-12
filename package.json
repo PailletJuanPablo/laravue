@@ -24,7 +24,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "codemirror": "^5.49.2",
+        "codemirror": "^5.58.2",
         "vuep": "^0.8.1"
     }
 }
